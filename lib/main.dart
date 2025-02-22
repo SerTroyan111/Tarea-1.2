@@ -37,7 +37,8 @@ class MyApp extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
                 [
-                  Icon(Icons.quickreply, size: 60,),
+                  Icon(Icons.access_time, size: 50, color: Colors.green,),
+                  SizedBox(width: 10,),
                   Column
                   (
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,7 +57,8 @@ class MyApp extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
                 [
-                  Icon(Icons.food_bank, size: 60,),
+                  Icon(Icons.food_bank, size: 50, color: Colors.orange,),
+                  SizedBox(width: 10,),
                   Column
                   (
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,7 +77,8 @@ class MyApp extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
                 [
-                  Icon(Icons.share, size: 60,),
+                  Icon(Icons.share, size: 50, color: Colors.yellow,),
+                  SizedBox(width: 10,),
                   Column
                   (
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -94,7 +97,8 @@ class MyApp extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
                 [
-                  Icon(Icons.square, size: 60,),
+                  Icon(Icons.square, size: 50, color: Colors.blue,),
+                  SizedBox(width: 10,),
                   Column
                   (
                     crossAxisAlignment: CrossAxisAlignment.start,
