@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget
           //title: const Text('Tarea 1.2'),
         ),
 
-        body: const Center
+        body: Center
         (
           child: Column
           (
@@ -110,10 +110,41 @@ class MyApp extends StatelessWidget
                 ],
               ),
 
-              SizedBox(height: 120,),
+              SizedBox(height: 100,),
 
               // Text('Hola'),
-              //FloatingActionButton(onPressed: (){})
+              ElevatedButton
+              (
+                style: ElevatedButton.styleFrom
+                (
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white,
+                  padding: EdgeInsets.symmetric
+                  (
+                    horizontal: 130,
+                    vertical: 16
+                  ),
+                  shape: RoundedRectangleBorder
+                  (
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: ()
+                {
+                    print('Boton');
+                },
+                child: 
+                Text
+                (
+                  'Continue',
+                  style: TextStyle
+                  (
+                    fontSize: 20,
+                  ),
+                ),
+                
+                
+              )
             ],
           ),
         ),
