@@ -29,10 +29,10 @@ class MyApp extends StatelessWidget
           (
             children: 
             [
-              Text('Welcome to', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
-              Text('Reminders', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
-              SizedBox(height: 60,),
-              Row
+              const Text('Welcome to', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+              const Text('Reminders', style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
+              const SizedBox(height: 60,),
+              const Row
               (
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
@@ -50,8 +50,8 @@ class MyApp extends StatelessWidget
                   )
                 ],
               ),
-              SizedBox(height: 40,),
-              Row
+              const SizedBox(height: 40,),
+              const Row
               (
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
@@ -69,8 +69,8 @@ class MyApp extends StatelessWidget
                   )
                 ],
               ),
-              SizedBox(height: 40,),
-              Row
+              const SizedBox(height: 40,),
+              const Row
               (
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
@@ -88,8 +88,8 @@ class MyApp extends StatelessWidget
                   )
                 ],
               ),
-              SizedBox(height: 40,),
-              Row
+              const SizedBox(height: 40,),
+              const Row
               (
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: 
@@ -110,7 +110,7 @@ class MyApp extends StatelessWidget
                 ],
               ),
 
-              SizedBox(height: 100,),
+              const SizedBox(height: 100,),
 
               // Text('Hola'),
               ElevatedButton
@@ -119,7 +119,7 @@ class MyApp extends StatelessWidget
                 (
                   backgroundColor: Colors.blue,
                   foregroundColor: Colors.white,
-                  padding: EdgeInsets.symmetric
+                  padding: const EdgeInsets.symmetric
                   (
                     horizontal: 130,
                     vertical: 16
@@ -134,7 +134,7 @@ class MyApp extends StatelessWidget
                     print('Boton');
                 },
                 child: 
-                Text
+                const Text
                 (
                   'Continue',
                   style: TextStyle
