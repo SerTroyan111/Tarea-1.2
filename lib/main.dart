@@ -114,7 +114,7 @@ class MyApp extends StatelessWidget
                 ],
               ),
 
-              const SizedBox(height: 100,),
+              const SizedBox(height: 90,),
 
               // Text('Hola'),
               ElevatedButton
@@ -135,7 +135,9 @@ class MyApp extends StatelessWidget
                 ),
                 onPressed: ()
                 {
-                    print('Boton');
+                    // print('Presionó el boton, compañero...');
+                    print('Iniciando explosion en:');
+                    iniciarCuentaRegresiva(3);
                 },
                 child: 
                 const Text
@@ -146,13 +148,30 @@ class MyApp extends StatelessWidget
                     fontSize: 20,
                   ),
                 ),
-                
-                
               )
             ],
           ),
         ),
       ),
     );
+  }
+}
+
+void iniciarCuentaRegresiva(int segundos)
+{
+  if (segundos > 0)
+  {
+    Future.delayed(Duration(seconds: 1), ()
+    {
+      print(segundos);
+      iniciarCuentaRegresiva(segundos - 1);
+    });
+  }
+  else
+  {
+    Future.delayed(Duration(seconds: 1), ()
+    {
+      print('¡Boom!');
+    });
   }
 }
